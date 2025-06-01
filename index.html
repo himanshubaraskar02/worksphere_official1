@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKSPHERE - Login</title>
+    <link rel="stylesheet" href="login1.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">WORKSPHERE</h1>
+        <nav>
+            <ul>
+                <li><a href="homefp.html">Home</a></li>
+                <li><a href="jobsfp.html">Job Opportunities</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About-section</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-container">
+        <h2>Login or Create an Account</h2>
+
+        <div class="user-type-tabs">
+            <button onclick="showForm('seeker')">Job Seeker</button>
+            <button onclick="showForm('employer')">Employer</button>
+        </div>
+
+        
+        <div id="seeker-form" class="form">
+            <h3>Job Seeker Login</h3>
+            <form>
+                <label for="seeker-email">Email:</label>
+                <input type="email" id="seeker-email" placeholder="Enter your email" required>
+
+                <label for="seeker-password">Password:</label>
+                <input type="password" id="seeker-password" placeholder="Enter your password" required>
+
+               <a href="homefp.html">Login</a>
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+
+        
+        <div id="employer-form" class="form" style="display: none;">
+            <h3>Employer Login</h3>
+            <form>
+                <label for="employer-email">Email:</label>
+                <input type="email" id="employer-email" placeholder="Enter your email" required>
+
+                <label for="employer-password">Password:</label>
+                <input type="password" id="employer-password" placeholder="Enter your password" required>
+
+             <a href="homefp.html">Login</a>
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 WORKSPHERE. All rights reserved.</p>
+    </footer>
+
+    <script src="scriptlp.js"></script>
+</body>
+</html>
