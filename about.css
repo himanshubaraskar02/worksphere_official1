@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0044fd;
+  
+}
+
+header {
+    background-color: #2e6cbc;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    box-sizing: border-box 1px solid #ffffff;
+    display: inline;
+    margin: 0 15px;
+    background-color: #ffffff;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e2e2e2;
+}
+
+.workshop-section {
+    padding: 20px;
+}
+
+.workshop-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.workshop-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.about-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: #333;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.about-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.about-section p {
+    line-height: 1.6;
+    color: #555;
+}

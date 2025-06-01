@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKSPHERE - Job Opportunities</title>
+    <link rel="stylesheet" href="jobsfp.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">WORKSPHERE</h1>
+        <nav>
+            <ul>
+                <li><a href="homefp.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="about.html">About-section</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="job-opportunities">
+        <h2>Find Your Dream Job</h2>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for jobs...">
+            <button onclick="searchJobs()">Search</button>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filter-bar">
+            <label for="category">Category:</label>
+            <select id="category" onchange="filterJobs()">
+                <option value="all">All Categories</option>
+                <option value="technology">Technology</option>
+                <option value="design">Design</option>
+                <option value="marketing">Marketing</option>
+            </select>
+        </div>
+
+        <!-- Job Listings -->
+        <div id="job-listings">
+            <div class="job-card" data-category="technology">
+                <h3>Software Developer</h3>
+                <p><strong>Company:</strong> Tech Solutions</p>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Requirements:</strong> Proficiency in JavaScript, React.js</p>
+               <a href="applyfp.html">Apply Now</a>
+            </div>
+            <div class="job-card" data-category="designing">
+                <h3>UI/UX Designer</h3>
+                <p><strong>Company:</strong> Creative Minds</p>
+                <p><strong>Location:</strong> New Delhi</p>
+                <p><strong>Requirements:</strong> Experience with Figma, Adobe XD</p>
+                <a href="applyfp.html">Apply Now</a>
+            </div>
+            <div class="job-card" data-category="marketing">
+                <h3>Marketing Specialist</h3>
+                <p><strong>Company:</strong> GrowthHackers</p>
+                <p><strong>Location:</strong> Bengaluru</p>
+                <p><strong>Requirements:</strong> Expertise in digital marketing and SEO</p>
+                <a href="applyfp.html">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 WORKSPHERE. All rights reserved.</p>
+    </footer>
+
+    <script src="jobsfp.js"></script>
+</body>
+</html>
